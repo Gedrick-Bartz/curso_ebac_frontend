@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            border-radius: 20px;
+            margin: 10px 10px;
+            padding: 20px;
+            width: 300px;
+            background-color:mintcream;
+        }
+
+        form label{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: dodgerblue;
+        }
+
+        form input{
+            width: 280px;
+            border: 1px solid #000;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        form button{
+            width: 150px;
+            height: 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: dodgerblue;
+            color: #fff;
+        }
+
+        form button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form class="formulario">
+
+        <!--Espaço para o nome com a label e o input. id->for referenciando a label-->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+      
+        <!--Espaço para o email com a label e o input. id->for referenciando a label-->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+      
+        <!--Espaço para a senha com a label e o input. id->for referenciando a label-->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+      
+        <!--Botão de envio-->
+        <button type="submit">Cadastrar</button>
+
+    </form>
+</body>
+</html>
